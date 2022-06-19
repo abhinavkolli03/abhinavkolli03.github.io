@@ -1,0 +1,200 @@
+.education__tab {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 65% 64%, rgba(70, 10, 64, 1) 0%, rgba(153, 30, 99, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 65% 64%, rgba(70, 10, 64, 1) 0%, rgba(153, 30, 99, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 65% 64%, rgba(70, 10, 64, 1) 0%, rgba(153, 30, 99, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 65% 64%, rgba(70, 10, 64, 1) 0%, rgba(153, 30, 99, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 65% 64%, rgba(70, 10, 64, 1) 0%, rgba(153, 30, 99, 1) 100%);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.show_bg_2 {
+    background-image:
+    linear-gradient(to bottom, rgba(51, 18, 42, 0.50), rgba(130, 32, 75, 0.50)),
+    url('../media/piece1.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+.education__tab-feature {
+    display: flex;
+}
+
+/* Customizing feature component as per needs */
+.education__tab-feature .education__features-container__feature {
+    margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.education__tab-feature .education__features-container__feature-text {
+    max-width: 700px;
+}
+
+.education__tab-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 2rem 0 1rem;
+}
+
+.education__tab-heading h2 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 560px;
+}
+
+.education__tab-heading p {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.education__tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.education__tab-container .education__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.education__tab-container .education__features-container__feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .education__tab-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .education__tab-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .education__tab-feature .education__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .education__tab-feature .education__features-container__feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .education__tab-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .education__tab-container .education__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
+
+.education__tab-container__feature {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+
+    margin: 1rem;
+}
+
+.education__tab-container__feature-title {
+    flex: 1;
+    max-width: 0px;
+    margin-right: 0rem;
+}
+
+.education__tab-container__feature-title h2 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #fff;
+}
+
+.education__features-container__feature-div {
+    width: 58px;
+    height: 3px;
+    background: var(--gradient-text);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.25rem;
+}
+
+.education__tab-container__feature-text {
+    flex: 2;
+    max-width: 390px;
+    display: flex;
+}
+
+.education__tab-container__feature-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+@media screen and (max-width: 550px) {
+    .education__tab-container__feature-title h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .education__tab-container__feature-text p {
+        font-size: 12px;
+        line-height: 20px;
+        display: wrap;
+    }
+
+    .education__tab-container__feature {
+        margin: 1rem 0;
+    }
+
+    .section__margin {
+        margin: 4rem 2rem;
+    }
+}

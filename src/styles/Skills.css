@@ -1,0 +1,131 @@
+.skills__container {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+    z-index: 1;
+    max-height: 860px;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.skills__container-reverse {
+    display: grid;
+    grid-template-columns: 75% 20%;
+    gap: 5%;
+    z-index: 1;
+    max-height: 860px;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.skills__title {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: #bbb;
+}
+
+.skills__title h2 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 560px;
+}
+
+.skills__content {
+    border-radius: 1rem;
+/* ff 3.6+ */
+background:-moz-linear-gradient(90deg, rgba(122, 17, 111, 1) 0%, rgba(160, 9, 108, 1) 100%); 
+
+/* safari 5.1+,chrome 10+ */
+background:-webkit-linear-gradient(90deg, rgba(122, 17, 111, 1) 0%, rgba(160, 9, 108, 1) 100%);
+
+/* opera 11.10+ */
+background:-o-linear-gradient(90deg, rgba(122, 17, 111, 1) 0%, rgba(160, 9, 108, 1) 100%);
+
+/* ie 6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A0096C', endColorstr='#7A116F', GradientType=0 );
+
+/* ie 10+ */
+background:-ms-linear-gradient(90deg, rgba(122, 17, 111, 1) 0%, rgba(160, 9, 108, 1) 100%);
+
+/* global 94%+ browsers support */
+background:linear-gradient(90deg, rgba(122, 17, 111, 1) 0%, rgba(160, 9, 108, 1) 100%);
+    
+}
+
+.skills__container-tech-stack {
+    margin: 50px auto 50px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    border-radius: 12px;
+    margin: 10px;
+    border: 2px solid orange;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.skill span {
+    margin-left: 10px;
+}
+
+.about__cards {
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.about__content {
+    text-align: center;
+}
+.button__container {
+    place-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: -80px;
+    }
+
+    .skills__container-reverse > .skills__title {
+        grid-row-start: 1;
+    }
+
+    .skills__container-reverse {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: -80px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .skills__title h2 {
+        margin: 10px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .skills__container-tech-stack img {
+        width: 20px;
+        height: 20px;
+    }
+}
