@@ -1,0 +1,20 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/abhinav-kolli-69429a1ba/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/abhinavkolli03"
+        },
+        {
+            "network": "instagram",
+            "href": "https://www.instagram.com/abhinav_kolli/"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:abhinavkolli03@gmail.com"
+        }
+    ]
+}
