@@ -5,6 +5,7 @@ import algorimage from '../media/projects/algorimage_ss.png'
 import stockbot from '../media/projects/stock_bot.png'
 import personal_site from '../media/projects/personal-site_ss.png'
 import messenger from '../media/projects/Messenger.png'
+import taskly from '../media/projects/taskly.png'
 
 
 const Projects = () => {
@@ -31,6 +32,16 @@ const Projects = () => {
         },
         {
             id: 3,
+            image: taskly,
+            title: 'Taskly',
+            description: 'A typescript, react, and redux-based CRUD-command application that allows users to save, edit, and report tasks in a checklist format for convenient use (currently uses only local storage to save content).',
+            github: 'https://github.com/abhinavkolli03/taskly',
+            demo: 'https://taskly-manager.herokuapp.com/',
+            demo_present: true,
+            skillsList: ['Typescript', 'react.js', 'redux', 'HTML', 'CSS']
+        },
+        {
+            id: 4,
             image: personal_site,
             title: 'Personal Website V1',
             description: 'My personal website that\'s used to display my portfolio and resume in more detail. I hope to make improvements using different frameworks in the future.',
@@ -40,7 +51,7 @@ const Projects = () => {
             skillsList: ['react.js', 'HTML', 'CSS', 'JS', 'Styled-Components', 'Firebase', 'Firestore Database']
         },
         {
-            id: 4,
+            id: 5,
             image: messenger,
             title: 'Messenger: 2D Ship Game',
             description: 'A videogame where the the user, or messenger, must carry a message to home base, while traversing through three rounds of enemy ships, asteroids, and bosses.',
