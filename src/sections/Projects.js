@@ -34,7 +34,7 @@ const Projects = () => {
             id: 3,
             image: taskly,
             title: 'Taskly',
-            description: 'A typescript, react, and redux-based CRUD-command application that allows users to save, edit, and report tasks in a checklist format for convenient use (currently uses only local storage to save content).',
+            description: 'A typescript, react, and redux-based CRUD-command application that allows users to save, edit, and report tasks in a checklist format.',
             github: 'https://github.com/abhinavkolli03/taskly',
             demo: 'https://taskly-manager.herokuapp.com/',
             demo_present: true,
@@ -46,8 +46,8 @@ const Projects = () => {
             title: 'Personal Website V1',
             description: 'My personal website that\'s used to display my portfolio and resume in more detail. I hope to make improvements using different frameworks in the future.',
             github: 'https://github.com/abhinavkolli03/portfolio-website',
-            demo: 'https://abhinavkolli03.github.io/portfolio-website/',
-            demo_present: false,
+            demo: 'https://abhinavkolli03.github.io/',
+            demo_present: true,
             skillsList: ['react.js', 'HTML', 'CSS', 'JS', 'Styled-Components', 'Firebase', 'Firestore Database']
         },
         {
