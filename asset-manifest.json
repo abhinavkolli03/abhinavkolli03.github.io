@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9fa5a59d.css",
+    "main.js": "/static/js/main.3f5a0663.js",
+    "static/media/video.mp4": "/static/media/video.8b997e89501e02815827.mp4",
+    "static/media/personal-site_ss.png": "/static/media/personal-site_ss.55f916e3d6d4ce3edca3.png",
+    "static/media/algorimage_ss.png": "/static/media/algorimage_ss.e7c3340a4a8f6ed8c2ad.png",
+    "static/media/fResume.pdf": "/static/media/fResume.5f24a5043460f3340573.pdf",
+    "static/media/me.jpeg": "/static/media/me.e6134d13e85a302c7150.jpeg",
+    "static/media/final_resume.pdf": "/static/media/final_resume.39ef4bf5262677eaf3fe.pdf",
+    "static/media/taskly.png": "/static/media/taskly.708f047913b9b42697d9.png",
+    "static/media/scikit-learn.png": "/static/media/scikit-learn.badd957ac15b0c4bf695.png",
+    "static/media/pytorch.png": "/static/media/pytorch.ced41d5ddd2fd1e5fa1a.png",
+    "static/media/stock_bot.png": "/static/media/stock_bot.78ecef07e9d771541212.png",
+    "static/media/piece1.jpg": "/static/media/piece1.4941a4c33444f42727bb.jpg",
+    "static/media/keras.png": "/static/media/keras.50b636f01e50d9f2d513.png",
+    "index.html": "/index.html",
+    "main.9fa5a59d.css.map": "/static/css/main.9fa5a59d.css.map",
+    "main.3f5a0663.js.map": "/static/js/main.3f5a0663.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fa5a59d.css",
+    "static/js/main.3f5a0663.js"
+  ]
+}
