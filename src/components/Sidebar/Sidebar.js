@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap  } from './SidebarElements'
 import { SimpleButton2 } from '../ButtonElement'
-import pdf from '../../media/final_resume.pdf'
+import pdf from '../../media/resume.pdf'
 const Sidebar = ({ isOpen, toggle }) => {
 
     const [hover, setHover] = useState(false)

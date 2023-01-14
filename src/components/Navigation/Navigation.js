@@ -3,7 +3,7 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } 
 import {FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
-import pdf from '../../media/fResume.pdf'
+import pdf from '../../media/resume.pdf'
 import { SimpleButton } from '../ButtonElement'
 
 const Navigation = ({toggle}) => {

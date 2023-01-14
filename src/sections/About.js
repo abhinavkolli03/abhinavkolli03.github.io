@@ -5,7 +5,7 @@ import { GiBullHorns, GiWeightLiftingUp, GiTechnoHeart } from 'react-icons/gi'
 import '../styles/About.css'
 import { IntroBtnWrapper } from '../components/IntroParts/IntroPartsElements'
 import { IoPaperPlane, IoHeartCircleSharp } from 'react-icons/io5'
-import pdf from '../media/final_resume.pdf'
+import pdf from '../media/resume.pdf'
 
 const About = () => {
     const [hover, setHover] = useState(false)
