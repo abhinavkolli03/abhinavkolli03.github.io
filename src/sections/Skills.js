@@ -107,9 +107,6 @@ const Skills = () => {
                         <img src={flaskPic} alt="Flask Icon" /><span style={{color: 'white'}}>Flask</span>
                     </div>
                     <div className="skill">
-                        <img src={djangoPic} alt="Django Icon" /><span style={{color: 'white'}}>Django</span>
-                    </div>
-                    <div className="skill">
                         <img src={seleniumPic} alt="Selenium Icon" /><span style={{color: 'white'}}>Selenium</span>
                     </div>
                     <div className="skill">

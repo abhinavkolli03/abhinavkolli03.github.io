@@ -13,42 +13,58 @@ const Experience = () => {
     let schoolStyles = { background: '#fffe01' }
     let experienceTimeline = [
         {
+            "id": 0,
+            "title": "Behaivior",
+            "location": "Pittsburgh, PA (remote)",
+            "description0": "Python, TensorFlow, Keras, Google Cloud, Firebase",
+            "description1": "Designed XGBoost and Bayesian Optimization model pipelines with multiprocessing to improve testing efficiency by 32%.",
+            "description2": "Deployed testing framework of XGBoost model into Google Cloud and stored opioid prediction results into Cloud Firestore.",
+            "description3": "Extracted 3 million records of opioid patients’ Garmin metrics from Firestore to process in company’s Terraform IaaS",
+            "date": "August 2022 - December 2022",
+            "job": "Machine Learning Engineer Intern",
+            "icon": "college"
+        },
+        {
             "id": 1,
             "title": "Kalvi Prep (E-Learning Startup)",
-            "location": "Frisco, TX",
-            "description1": "Updated current website with new database form and mobile app features using React Native.",
-            "description2": "Created institute’s 32-week AP Computer Science and Intermediate/Advanced Java course to over 600 registered students.",
-            "date": "May 2021 - September 2021",
+            "location": "Atlanta, GA (remote)",
+            "description0": "React Native, MongoDB, JavaScript, Java",
+            "description1": "Oversaw backend services team for website’s database, interest form, and mobile features using MongoDB and React Native.",
+            "description2": "Established institute’s 32-week Java Computer Science Data Structures course to 600+ registered students.",
+            "description3": "Launched final website with team using agile development, resulting in 25,000 page visits and 2,300+ student interest forms.",
+            "date": "May 2021 - August 2021",
             "job": "Software Engineer Intern and Coding Instructor",
             "icon": "college"
         },
         {
             "id": 2,
-            "title": "initializeChange() (Non-Profit)",
-            "location": "Dallas, TX",
-            "description1": "Hosted over 240 hours of individualized mentoring on hackathon-related programming frameworks and languages.",
-            "description2": "Partnered with National Tech Administration in organizing 9 workshops, HackCOVID, and Techspire accelerator program.",
-            "description3": "Led a beginner Swift iOS and MIT App Inventor bootcamp to 25 students for two months.",
-            "date": "May 2019 - August 2021",
-            "job": "Co-founder",
-            "icon": "college"
-        }, 
-        {
-            "id": 3,
             "title": "UT Dallas AI Labs",
             "location": "Richardson, TX",
-            "description1": "Explored various classifications, regressions, and algorithmic concepts under Dr. Anurag Nagar.",
-            "description2": "Cleaned and prepared data for Dr. Nagar's research and helped train an ARIMA-LSTM neural network model using Tensorflow-Keras to predict stock trends.",
-            "date": "May 2020 - August 2020",
+            "description0": "Python, TensorFlow, Keras",
+            "description1": "Trained an ARIMA-LSTM neural network to accurately predict 71% of next month’s stock close prices using time-series data.",
+            "description2": "Constructed an epsilon greedy DQN learning agent called StockBot and led experiments to simulate stock trading over 500 days.",
+            "description3": "Co-authored university research paper on model’s forecasting performance and reinforcement simulation on 4 distinct stocks.",
+            "date": "June 2020 - July 2020",
             "job": "Machine Learning Research Intern",
-            "icon": "school"
+            "icon": "college"
         },
+        {
+            "id": 3,
+            "title": "initializeChange() (Non-Profit)",
+            "location": "Dallas, TX",
+            "description0": "MIT App Inventor, Swift, HTML, CSS, JavaScript",
+            "description1": "Coordinated 9 workshops, HackCOVID hackathon, and Techspire Accelerator program with the National Tech Administration.",
+            "description2": "Hosted 240 hours of mentoring to 150+ students in summer bootcamps, resulting in 25% increase in non-profit event attendance.",
+            "date": "May 2019 - August 2021",
+            "job": "Co-founder & Operations Director",
+            "icon": "school"
+        }, 
         {
             "id": 4,
             "title": "Allstate Insurance",
             "location": "Frisco, TX",
-            "description1": "Shadowed senior security team members on handling policy requests, audits, and patch updates to company software.", 
-            "description2": "Implemented firewall security measures (firemon), python, and CompTia Security+ daily to monitor servers and networks.",
+            "description0": "Shadowed senior security team members on handling policy requests, audits, and patch updates to company software.", 
+            "description1": "Implemented firewall security measures (firemon), python, and CompTia Security+ daily to monitor servers and networks.",
             "date": "June 2019 - July 2019",
             "job": "Cybersecurity Risk Analyst Intern",
             "icon": "school"
@@ -65,7 +81,7 @@ const Experience = () => {
 
                         return (
                             <VerticalTimelineElement 
-                                contentStyle={{ background: 'rgba(122, 17, 111, 1)' }}
+                                contentStyle={{ background: 'rgba(255, 148, 112, 1)' }}
                                 key={element.key}
                                 date={element.date}
                                 dateClassName="date"
@@ -78,10 +94,13 @@ const Experience = () => {
                                         <h4 className="vertical-timeline-element-subtitle"><b>{element.location}</b></h4>
                                         <div className='List'>
                                             <List>
+                                                <List.Item icon='users' content={<b><FaHandPointRight /> {element.description0}</b>} />
                                                 <br></br>
                                                 <List.Item icon='users' content={<b><FaHandPointRight /> {element.description1}</b>} />
                                                 <br></br>
-                                                <List.Item icon='users' content={<b><FaHandPointRight /> {element.description2}</b>} />
+                                                {element.description2 && <List.Item icon='users' content={<b><FaHandPointRight /> {element.description2}</b>} />}
+                                                <br></br>
+                                                {element.description3 && <List.Item icon='users' content={<b><FaHandPointRight /> {element.description3}</b>} />}
                                             </List>              
                                         </div>                    
                                     </div>
