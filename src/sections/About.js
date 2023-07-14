@@ -40,7 +40,7 @@ const About = () => {
                         <article className='about__card'>
                             <div className='about__words'>
                                 <h2 style={{textAlign: 'center'}}><GiWeightLiftingUp /><br></br> Hobbies</h2>
-                                <p>Aside from spending hours debugging VSCode, I love weightlifting, football, binging mystery or comedy shows, and cooking!</p>
+                                <p>Aside from spending hours debugging VSCode, I love cycling, hiking at national parks, football, binging mystery movies or comedy classics, and cooking!</p>
                             </div>
                         </article>
                     </div>

@@ -10,11 +10,26 @@ import webcrawler from "../media/projects/webcrawler.png"
 import board from "../media/projects/2048.png"
 import senpi from "../media/projects/SENPI.png"
 import snake from "../media/projects/snakeAI.png"
+import adrn from "../media/projects/adrn.jpg"
+import bucketlist from "../media/projects/bucketlist.png"
+import shome from "../media/projects/shome.jpg"
+import tetris from "../media/projects/tetris.png"
+import vlogmi from "../media/projects/vlogmi.jpeg"
 
 const Projects = () => {
     const projectsList = [
         {
             id: 0,
+            image: bucketlist,
+            title: 'Bucket List',
+            description: 'Startup idea to provide simplistic interface to auto-generate, manually create, or find existing itineraries to plan your trips easily under a social network.',
+            github: 'https://github.com/abhinavkolli03/bucketlist',
+            demo: '',
+            demo_present: false,
+            skillsList: ['React', 'MongoDB', 'Node.js', 'Express.js', 'Tailwind CSS', 'AWS', 'OpenAI']
+        },
+        {
+            id: 1,
             image: board,
             title: 'Gamai: 2048 AI',
             description: 'Crafted DQN agent to live train against cloned version of 2048 game using OpenAI and Keras and succeeds in less than 500 trials.',
@@ -22,19 +37,49 @@ const Projects = () => {
             demo: '',
             demo_present: false,
             skillsList: ['Python', 'Flask', 'React.js', 'Tensorflow-Keras', 'OpenAI Gym']
-        },
-        {
-            id: 1,
-            image: senpi,
-            title: 'SENPI: 2048 AI',
-            description: 'Trained and documented sentiment analysis api\'s results of various binary classification models with an airline\’s reviews dataset.',
-            github: 'https://github.com/abhinavkolli03/sentiment-analysis-api-project',
-            demo: 'https://vimeo.com/734881463',
-            demo_present: true,
-            skillsList: ['Python', 'FastAPI', 'sklearn', 'Pyramid-swagger']
-        },
+        },      
         {
             id: 2,
+            image: stockbot,
+            title: 'The Stock Bot',
+            description: 'A Tensroflow Keras DQN bot that took in an ARIMA-LSTM model\'s results and simulated when it would trade, buy, or sell stocks through reinforcement learning.',
+            github: 'https://github.com/abhinavkolli03/StockBot-Research',
+            demo: 'https://github.com/abhinavkolli03/StockBot-Research/blob/main/Final%20Research%20Paper.pdf',
+            demo_present: true,
+            skillsList: ['python', 'numpy', 'pandas', 'Tensorflow-Keras']
+        },  
+        {
+            id: 3,
+            image: shome,
+            title: 'ShoMe E-learning Platform',
+            description: 'Worked with ShoMe founders on building e-learning startup\'s landing, home, and search screens using React Native, Firestore, and OAuth2 social login providers for user validation.',
+            github: 'https://github.com/abhinavkolli03/ShoMeInterface-Development',
+            demo: 'https://www.shome.how/',
+            demo_present: true,
+            skillsList: ['React Native', 'Firestore', 'OAuth2', 'Redux']
+        },
+        {
+            id: 4,
+            image: adrn,
+            title: 'ADRN Check-In App',
+            description: 'Consulted under Austin Disaster Relief Network to create a QR-code scanning app to check-in and register volunteers.',
+            github: 'https://github.com/abhinavkolli03/ADRCheckInApp',
+            demo: '',
+            demo_present: false,
+            skillsList: ['React Native', 'Envoy', 'Redux']
+        },
+        {
+            id: 5,
+            image: vlogmi,
+            title: 'VlogMi Vlog Application',
+            description: 'Worked with VlogMi founders on building social media startup\'s React Native application. Enhanced monetization interface with Figma designs and Wagmi charts.',
+            github: 'https://github.com/abhinavkolli03/VlogMi-Monetization',
+            demo: 'https://www.vlogmi.com/',
+            demo_present: true,
+            skillsList: ['React Native', 'Swift', 'Wagmi', 'Redux', 'AWS']
+        },
+        {
+            id: 6,
             image: webcrawler,
             title: 'Webcrawler & Search Engine',
             description: 'Webcrawler capable of traversing parsed HTML pages and storing them into efficient web indices. Additionally, there is a GUI search engine users can test queries and receive crawled site links.',
@@ -44,27 +89,47 @@ const Projects = () => {
             skillsList: ['Java', 'JavaFX', 'JUnit']
         },
         {
-            id: 3,
+            id: 7,
+            image: senpi,
+            title: 'SPI: Sentiment Analysis API',
+            description: 'Trained and documented sentiment analysis api\'s results of various binary classification models with an airline\’s reviews dataset.',
+            github: 'https://github.com/abhinavkolli03/sentiment-analysis-api-project',
+            demo: 'https://vimeo.com/734881463',
+            demo_present: true,
+            skillsList: ['Python', 'FastAPI', 'sklearn', 'Pyramid-swagger']
+        },
+        {
+            id: 8,
             image: algorimage,
             title: 'Algorimage: Pathfinder',
             description: 'A pathfinding visualizer that tests various algorithms (A*, Djikstra, Greedy, BFS, DFS) under different heuristics. The user can also change end points, add/randomize walls, and increase wall density.',
-            github: 'https://github.com/abhinavkolli03/algorimage',
+            github: 'https://github.com/abhinavkolli03/Algorimage-master',
             demo: '',
             demo_present: false,
             skillsList: ['react.js', 'HTML', 'CSS', 'JS']
         },
         {
-            id: 4,
-            image: stockbot,
-            title: 'The Stock Bot',
-            description: 'A Tensroflow Keras DQN bot that took in an ARIMA-LSTM model\'s results and simulated when it would trade, buy, or sell stocks through reinforcement learning.',
-            github: 'https://github.com',
-            demo: 'https://github.com/abhinavkolli03/StockBot-Research/blob/main/Final%20Research%20Paper.pdf',
-            demo_present: true,
-            skillsList: ['python', 'numpy', 'pandas', 'Tensorflow-Keras']
+            id: 9,
+            image: tetris,
+            title: 'Tetris Algorithm',
+            description: 'School project focused on data structures skills when creating Tetris game. Also designed a Tetris algorithm to play the game ',
+            github: 'https://github.com/abhinavkolli03/TetrisAI-Agent',
+            demo: '',
+            demo_present: false,
+            skillsList: ['Java', 'JUnit', 'JavaFX']
         },
         {
-            id: 5,
+            id: 10,
+            image: snake,
+            title: 'Snake AI',
+            description: 'Built experimental interface for Q-learning agent to play Snake with adjustable hyperparameters and achieved length 65 in 400 trials.',
+            github: 'https://github.com/abhinavkolli03/SnakeAI',
+            demo: '',
+            demo_present: false,
+            skillsList: ['Python', 'Pygame']
+        },
+        {
+            id: 11,
             image: taskly,
             title: 'Taskly',
             description: 'A typescript, react, and redux-based CRUD-command application that allows users to save, edit, and report tasks in a checklist format.',
@@ -74,17 +139,17 @@ const Projects = () => {
             skillsList: ['Typescript', 'react.js', 'redux', 'HTML', 'CSS']
         },
         {
-            id: 6,
+            id: 12,
             image: personal_site,
             title: 'Personal Website V1',
             description: 'My personal website that\'s used to display my portfolio and resume in more detail. I hope to make improvements using different frameworks in the future.',
-            github: 'https://github.com/abhinavkolli03/portfolio-website',
+            github: 'https://github.com/abhinavkolli03/abhinavkolli03.github.io',
             demo: 'https://abhinavkolli03.github.io/',
             demo_present: true,
             skillsList: ['react.js', 'HTML', 'CSS', 'JS', 'Styled-Components', 'Firebase', 'Firestore Database']
         },
         {
-            id: 7,
+            id: 13,
             image: messenger,
             title: 'Messenger: 2D Ship Game',
             description: 'A videogame where the the user, or messenger, must carry a message to home base, while traversing through three rounds of enemy ships, asteroids, and bosses.',
@@ -92,16 +157,6 @@ const Projects = () => {
             demo: '',
             demo_present: false,
             skillsList: ['C#', 'VSCode']
-        },
-        {
-            id: 8,
-            image: snake,
-            title: 'Snake AI',
-            description: 'Built experimental interface for Q-learning agent to play Snake with adjustable hyperparameters and achieved length 65 in 400 trials.',
-            github: 'https://github.com/abhinavkolli03/SnakeAI',
-            demo: '',
-            demo_present: false,
-            skillsList: ['Python', 'Pygame']
         },
     ]
 

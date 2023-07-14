@@ -17,6 +17,7 @@ export const EducationFeature = ({title1, text, title2}) => {
             return(
               <IconContext.Provider value={{color: 'orange', size: '10px'}}>
                 <li><VscDebugBreakpointData /> <b>{element}</b></li>
+                <br></br>
               </IconContext.Provider>
             );
           })}
