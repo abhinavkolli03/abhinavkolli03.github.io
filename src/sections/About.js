@@ -1,5 +1,5 @@
 import React, {useState } from 'react';
-import Pic from '../media/me.jpeg'
+import Pic from '../media/me.jpg'
 import { Button, SimpleButton2 } from '../components/ButtonElement.js'
 import { GiBullHorns, GiWeightLiftingUp, GiTechnoHeart } from 'react-icons/gi'
 import '../styles/About.css'
@@ -28,7 +28,7 @@ const About = () => {
                         <article className='about__card'>
                             <div className='about__words'>
                                 <h2 style={{textAlign: 'center'}}><GiTechnoHeart /><br></br> Career Goals</h2>
-                                <p>I'm a proficient full-stack software engineer and data analyst interested in entreprenuership and cloud platforms!</p>
+                                <p>I'm a proficient full-stack software engineer and an aspiring ML engineer interested in developing data-driven, scalable applications!</p>
                             </div>
                         </article>
                         <article className='about__card'>

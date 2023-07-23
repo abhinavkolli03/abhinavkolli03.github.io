@@ -9,6 +9,7 @@ import Experience from './Experience'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import Certifications from './Certifications';
 
 const Title = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -24,6 +25,7 @@ const Title = () => {
             <About />
             <Education />
             <Skills />
+            <Certifications />
             <Experience />
             <Projects />
             <Contact />

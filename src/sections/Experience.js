@@ -26,6 +26,18 @@ const Experience = () => {
         },
         {
             "id": 1,
+            "title": "Forge Startups",
+            "location": "Austin, TX",
+            "description0": "React Native, Figma, Jira, Firestore, OAuth2, Wagmi Graphs, Swift",
+            "description1": "Migrated Austin startup VlogMi vlog software to React Native from iOS and scheduled biweekly sprint meetings to update founders",
+            "description2": "Enhanced VlogMi monetization screen with Figma and wagmi graphs, leading to 65% higher UI and user flow customer satisfaction",
+            "description3": "Built ShoMe e-learning app’s landing, home, and find pages with React Native, Firestore, and OAuth2 with 33% faster data retrieval",
+            "date": "September 2022 - Present",
+            "job": "Software Engineer Lead",
+            "icon": "college"
+        },
+        {
+            "id": 2,
             "title": "Behavior (Health-Tech Startup)",
             "location": "Pittsburgh, PA (remote)",
             "description0": "Python, TensorFlow, Keras, Google Cloud, Firebase, IaaS, XGBoost",
@@ -37,7 +49,7 @@ const Experience = () => {
             "icon": "college"
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "Kalvi Prep (E-Learning Platform)",
             "location": "Atlanta, GA (remote)",
             "description0": "React Native, MongoDB, JavaScript, Java, Firestore",
@@ -49,7 +61,7 @@ const Experience = () => {
             "icon": "college"
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "University of Texas at Dallas",
             "location": "Richardson, TX",
             "description0": "Python, TensorFlow, Keras, Google Colab",
@@ -61,7 +73,7 @@ const Experience = () => {
             "icon": "college"
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "initializeChange() (Non-Profit)",
             "location": "Dallas, TX",
             "description0": "MIT App Inventor, Swift, HTML, CSS, JavaScript",
@@ -73,7 +85,7 @@ const Experience = () => {
             "icon": "school"
         }, 
         {
-            "id": 5,
+            "id": 6,
             "title": "Allstate Insurance",
             "location": "Frisco, TX",
             "description0": "Shadowed senior security team members on handling policy requests, audits, and patch updates to company software.", 
