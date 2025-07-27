@@ -2,12 +2,19 @@ import React, {useState} from 'react'
 import Video from '../../media/video.mp4'
 import { IntroContainer, IntroBg, VideoBg, IntroContent, IntroTitle,
 IntroP, IntroBtnWrapper, EyeDown, EyeUp, FirstThought, SecondThought } from './IntroPartsElements'
-import { Typewriter } from 'react-simple-typewriter'
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { Button } from '../ButtonElement'
 import Social from '../Social'
 
 const IntroParts = () => {
   const [hover, setHover] = useState(false)
+  const [text] = useTypewriter({
+    words: ['Software Engineer', 'AI/ML Enthusiast', 'Food Truck Lover', 'Kayaking Fanatic'],
+    loop: 0,
+    typeSpeed: 70,
+    deleteSpeed: 50,
+    delaySpeed: 1000,
+  });
 
   const onHover = () => {
     setHover(!hover)
@@ -21,13 +28,8 @@ const IntroParts = () => {
         <IntroContent>
           <IntroTitle>Hey, I'm Abhinav!</IntroTitle>
           <IntroP>
-            <Typewriter
-              options={{
-                loop: true,
-                autoStart: true,
-                strings: ['Software Engineer', 'Data Analyst', 'Food Truck Lover', 'Cyclist', 'PM & Design Enthusiast'],
-              }}
-            />
+            {text}
+            <Cursor />
           </IntroP>
           <IntroBtnWrapper>
             <Button to='projects' 
