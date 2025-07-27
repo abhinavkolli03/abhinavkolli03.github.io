@@ -15,7 +15,7 @@ const Experience = () => {
         {
             id: 0,
             title: "Google",
-            location: "Mountain View, CA",
+            location: "Austin, TX",
             description0: "Angular TypeScript, RxJS, Java, Spanner (DB), GCP, Protocol Buffers",
             description1: "Coming soon!",
             date: "August 2025 – November 2025",
@@ -25,7 +25,7 @@ const Experience = () => {
         {
             id: 1,
             title: "Meta",
-            location: "Menlo Park, CA",
+            location: "New York, NY",
             description0: "SQL, LLMs, RAG, Data Pipeline, Hive, Scuba, Hack, PHP/XHP, React, JavaScript",
             description1: "Spearheaded LLM agent to generate campaign-specific audience segments across 7 marketing pods, cutting manual creation time by ~99%",
             description2: "Integrated data pipeline, RAG filter, and custom scoring system to match audience requests with 3K+ signals, reaching 88% fit accuracy",

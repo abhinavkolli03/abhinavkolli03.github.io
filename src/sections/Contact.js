@@ -4,7 +4,8 @@ import { SimpleButton2 } from '../components/ButtonElement';
 import { IoPaperPlane } from 'react-icons/io5'
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import firebaseDB from '../components/ContactFirebase';
+import { database } from '../components/ContactFirebase';
+import { ref, push } from "firebase/database";
 
 const Contact = () => {
     const [hover, setHover] = useState(false)
@@ -23,7 +24,7 @@ const Contact = () => {
       setHover(!hover)
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         let activate = true;
         if(!message) {
@@ -50,10 +51,30 @@ const Contact = () => {
             toast.error("Please enter your last name")
             activate = false
         }
-        if(activate) {
-            firebaseDB.child("contacts").push(data);
-            setData({first: "", last: "", email: "", phone: "", subject: "", message: ""});
-            toast.success("Message Sent Successfully");
+        if (activate) {
+            await push(ref(database, "contacts"), data);
+
+            try {
+                const response = await fetch(process.env.REACT_APP_CLOUD_FUNCTION_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: `${first} ${last}`,
+                        email,
+                        phone,
+                        subject,
+                        message
+                    })
+                });
+                if (response.ok) {
+                    toast.success("Message Sent Successfully");
+                    setData({ first: "", last: "", email: "", phone: "", subject: "", message: "" });
+                } else {
+                    toast.error("Failed to send email. Please try again later.");
+                }
+            } catch (err) {
+                toast.error("Failed to send email. Please try again later.");
+            }
         }
     };
 

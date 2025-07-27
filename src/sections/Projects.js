@@ -15,11 +15,22 @@ import bucketlist from "../media/projects/bucketlist.png"
 import shome from "../media/projects/shome.jpg"
 import tetris from "../media/projects/tetris.png"
 import vlogmi from "../media/projects/vlogmi.jpeg"
+import discountai from "../media/projects/discountai.png"
 
 const Projects = () => {
     const projectsList = [
         {
             id: 0,
+            image: discountai,
+            title: 'Discount.ai',
+            description: 'Finalist at HackMIT. Created webapp that generates Excel discounted cash flows from finance API. Vectorized DCF Excel inputs with LangChain and trained LLMs to provide users discussions with chatbot on investment projections.',
+            github: 'https://github.com/abhinavkolli03/discount.ai',
+            demo: '',
+            demo_present: false,
+            skillsList: ['React', 'JavaScript', 'Python', 'Flask', 'Vertex AI', 'LangChain', 'Pinecone', 'OpenAI']
+        },
+        {
+            id: 1,
             image: bucketlist,
             title: 'Bucket List',
             description: 'Startup idea to provide simplistic interface to auto-generate, manually create, or find existing itineraries to plan your trips easily under a social network.',
@@ -29,7 +40,7 @@ const Projects = () => {
             skillsList: ['React', 'MongoDB', 'Node.js', 'Express.js', 'Tailwind CSS', 'AWS', 'OpenAI']
         },
         {
-            id: 1,
+            id: 2,
             image: board,
             title: 'Gamai: 2048 AI',
             description: 'Crafted DQN agent to live train against cloned version of 2048 game using OpenAI and Keras and succeeds in less than 500 trials.',
@@ -38,16 +49,6 @@ const Projects = () => {
             demo_present: false,
             skillsList: ['Python', 'Flask', 'React.js', 'Tensorflow-Keras', 'OpenAI Gym']
         },      
-        {
-            id: 2,
-            image: stockbot,
-            title: 'The Stock Bot',
-            description: 'A Tensroflow Keras DQN bot that took in an ARIMA-LSTM model\'s results and simulated when it would trade, buy, or sell stocks through reinforcement learning.',
-            github: 'https://github.com/abhinavkolli03/StockBot-Research',
-            demo: 'https://github.com/abhinavkolli03/StockBot-Research/blob/main/Final%20Research%20Paper.pdf',
-            demo_present: true,
-            skillsList: ['python', 'numpy', 'pandas', 'Tensorflow-Keras']
-        },  
         {
             id: 3,
             image: shome,
@@ -80,6 +81,16 @@ const Projects = () => {
         },
         {
             id: 6,
+            image: stockbot,
+            title: 'The Stock Bot',
+            description: 'A Tensroflow Keras DQN bot that took in an ARIMA-LSTM model\'s results and simulated when it would trade, buy, or sell stocks through reinforcement learning.',
+            github: 'https://github.com/abhinavkolli03/StockBot-Research',
+            demo: 'https://github.com/abhinavkolli03/StockBot-Research/blob/main/Final%20Research%20Paper.pdf',
+            demo_present: true,
+            skillsList: ['python', 'numpy', 'pandas', 'Tensorflow-Keras']
+        },  
+        {
+            id: 7,
             image: webcrawler,
             title: 'Webcrawler & Search Engine',
             description: 'Webcrawler capable of traversing parsed HTML pages and storing them into efficient web indices. Additionally, there is a GUI search engine users can test queries and receive crawled site links.',
@@ -89,7 +100,7 @@ const Projects = () => {
             skillsList: ['Java', 'JavaFX', 'JUnit']
         },
         {
-            id: 7,
+            id: 8,
             image: senpi,
             title: 'SPI: Sentiment Analysis API',
             description: 'Trained and documented sentiment analysis api\'s results of various binary classification models with an airline\’s reviews dataset.',
@@ -99,7 +110,7 @@ const Projects = () => {
             skillsList: ['Python', 'FastAPI', 'sklearn', 'Pyramid-swagger']
         },
         {
-            id: 8,
+            id: 9,
             image: algorimage,
             title: 'Algorimage: Pathfinder',
             description: 'A pathfinding visualizer that tests various algorithms (A*, Djikstra, Greedy, BFS, DFS) under different heuristics. The user can also change end points, add/randomize walls, and increase wall density.',
@@ -109,7 +120,7 @@ const Projects = () => {
             skillsList: ['react.js', 'HTML', 'CSS', 'JS']
         },
         {
-            id: 9,
+            id: 10,
             image: tetris,
             title: 'Tetris Algorithm',
             description: 'School project focused on data structures skills when creating Tetris game. Also designed a Tetris algorithm to play the game ',
@@ -119,7 +130,7 @@ const Projects = () => {
             skillsList: ['Java', 'JUnit', 'JavaFX']
         },
         {
-            id: 10,
+            id: 11,
             image: snake,
             title: 'Snake AI',
             description: 'Built experimental interface for Q-learning agent to play Snake with adjustable hyperparameters and achieved length 65 in 400 trials.',
@@ -129,7 +140,7 @@ const Projects = () => {
             skillsList: ['Python', 'Pygame']
         },
         {
-            id: 11,
+            id: 12,
             image: taskly,
             title: 'Taskly',
             description: 'A typescript, react, and redux-based CRUD-command application that allows users to save, edit, and report tasks in a checklist format.',
@@ -139,7 +150,7 @@ const Projects = () => {
             skillsList: ['Typescript', 'react.js', 'redux', 'HTML', 'CSS']
         },
         {
-            id: 12,
+            id: 13,
             image: personal_site,
             title: 'Personal Website V1',
             description: 'My personal website that\'s used to display my portfolio and resume in more detail. I hope to make improvements using different frameworks in the future.',
@@ -149,7 +160,7 @@ const Projects = () => {
             skillsList: ['react.js', 'HTML', 'CSS', 'JS', 'Styled-Components', 'Firebase', 'Firestore Database']
         },
         {
-            id: 13,
+            id: 14,
             image: messenger,
             title: 'Messenger: 2D Ship Game',
             description: 'A videogame where the the user, or messenger, must carry a message to home base, while traversing through three rounds of enemy ships, asteroids, and bosses.',
