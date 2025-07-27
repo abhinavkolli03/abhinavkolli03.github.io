@@ -1,23 +1,60 @@
+.certifications__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding-top: 3rem;
+}
+
 .certification__tab {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
-    padding: 2rem;
+    width: 300px;
+    height: 240px;
+    margin: 0;
+    border-radius: 18px;
+    padding: 1.5rem 1rem 1rem 1rem;
 
     /* ff 3.6+ */
     background:-moz-radial-gradient(circle at 65% 64%, rgba(187, 73, 107, 1) 0%, rgba(187, 73, 107, 1) 100%);
-
     /* safari 5.1+,chrome 10+ */
     background:-webkit-radial-gradient(circle at 65% 64%, rgba(187, 73, 107, 1) 0%, rgba(187, 73, 107, 1) 100%);
-
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 65% 64%, rgba(187, 73, 107, 1) 0%, rgba(187, 73, 107, 1) 100%);
-
+    background:-o-radial-gradient(circle at 65% 64%, rgb(254, 240, 244) 0%, rgba(187, 73, 107, 1) 100%);
     /* ie 10+ */
     background:-ms-radial-gradient(circle at 65% 64%, rgba(187, 73, 107, 1) 0%, rgba(187, 73, 107, 1) 100%);
-
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 65% 64%, rgba(187, 73, 107, 1) 0%, rgba(187, 73, 107, 1) 100%);
-    
+    background:linear-gradient(90deg, rgba(122, 17, 111, 1) 0%, rgba(160, 9, 108, 1) 100%);
+
     filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.25));
+    transition: transform 0.15s;
+}
+
+.certification__tab:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+}
+
+.certification__tab img {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.certification__tab p {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    word-break: break-word;
 }

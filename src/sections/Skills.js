@@ -76,9 +76,6 @@ const Skills = () => {
                         <img src={sassPic} alt="Sass Icon" /><span style={{color: 'white'}}>Sass</span>
                     </div>
                     <div className="skill">
-                        <img src={armPic} alt="ARM Icon" /><span style={{color: 'white'}}>ARM</span>
-                    </div>
-                    <div className="skill">
                         <img src={cPic} alt="C Icon" /><span style={{color: 'white'}}>C</span>
                     </div>
                     <div className="skill">

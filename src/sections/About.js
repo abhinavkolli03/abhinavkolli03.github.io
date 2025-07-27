@@ -14,7 +14,7 @@ const About = () => {
       setHover(!hover)
     }
 
-	return(
+    return(
         <section style={{background: 'linear-gradient(#000000, #181B46)'}} id="about">
             <h1 data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="400" style={{color: '#fff'}}>About Me</h1>
             <div className="container about__container">
@@ -27,20 +27,22 @@ const About = () => {
                     <div data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="400" className='about__cards'>
                         <article className='about__card'>
                             <div className='about__words'>
-                                <h2 style={{textAlign: 'center'}}><GiTechnoHeart /><br></br> Career Goals</h2>
-                                <p>I'm a proficient full-stack software engineer and an aspiring ML engineer interested in developing data-driven, scalable applications!</p>
+                                <h2 style={{textAlign: 'center'}}><GiTechnoHeart /><br /> Career Goals</h2>
+                                <p>
+                                  I'm a proficient full-stack software engineer with experience in full-stack, cloud, and AI/ML systems. I enjoy building scalable, data-driven solutions and leveraging technology to solve real-world problems.
+                                </p>
                             </div>
                         </article>
                         <article className='about__card'>
                             <div className='about__words'>
-                                <h2 style={{textAlign: 'center'}}><GiBullHorns /><br></br> Current Status</h2>
-                                <p>I'm an undergraduate student at UT Austin's CS and Business Honors program looking for possible internship and work opportunities!</p>
+                                <h2 style={{textAlign: 'center'}}><GiBullHorns /><br /> Current Status</h2>
+                                <p>I'm an undergraduate senior at UT Austin's CS and Business Honors program looking for possible full-time work opportunities!</p>
                             </div>
                         </article>
                         <article className='about__card'>
                             <div className='about__words'>
-                                <h2 style={{textAlign: 'center'}}><GiWeightLiftingUp /><br></br> Hobbies</h2>
-                                <p>Aside from spending hours debugging VSCode, I love cycling, hiking at national parks, football, binging mystery movies or comedy classics, and cooking!</p>
+                                <h2 style={{textAlign: 'center'}}><GiWeightLiftingUp /><br /> Hobbies</h2>
+                                <p>Aside from spending hours debugging VSCode, I love cycling, kayaking, hiking at national parks, football (Panthers), binging mystery movies or comedy classics, sudoku, weightlifting, and cooking!</p>
                             </div>
                         </article>
                     </div>
