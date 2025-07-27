@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Video from '../../media/video.mp4'
 import { IntroContainer, IntroBg, VideoBg, IntroContent, IntroTitle,
 IntroP, IntroBtnWrapper, EyeDown, EyeUp, FirstThought, SecondThought } from './IntroPartsElements'
-import Typewriter from 'typewriter-effect'
+import { Typewriter } from 'react-simple-typewriter'
 import { Button } from '../ButtonElement'
 import Social from '../Social'
 

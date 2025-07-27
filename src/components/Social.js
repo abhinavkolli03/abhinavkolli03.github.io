@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { SocialIcon } from 'react-social-icons';
+import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import endpoints from '../endpoints/endpoints';
 
-const styles = {
-  iconStyle: {
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: -30,
-    bgColor: 'white'
-  },
+const iconMap = {
+  linkedin: FaLinkedin,
+  github: FaGithub,
+  instagram: FaInstagram,
+  email: FaEnvelope,
 };
 
 const baseSocial = [
@@ -26,7 +24,7 @@ const baseSocial = [
   },
   {
       "network" : "email",
-      "href": "mailto:abhinavkolli03@gmail.com"
+      "href": "mailto:abhinavkolli033@gmail.com"
   }
 ]
 
@@ -44,17 +42,20 @@ function Social() {
 
   return (
     <div className="social">
-      {baseSocial.map((social) => (
-        <SocialIcon
-          key={social.network}
-          style={styles.iconStyle}
-          url={social.href}
-          bgColor='#e83b36'
-          network={social.network}
-          target="_blank"
-          rel="noopener"
-        />
-      ))}
+      {baseSocial.map((social) => {
+        const IconComponent = iconMap[social.network];
+        return (
+          <a
+            key={social.network}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ margin: '0 10px' }}
+          >
+            <IconComponent size={32} color="#e83b36" />
+          </a>
+        );
+      })}
     </div>
   );
 }
